@@ -1,4 +1,17 @@
 _schema-version: '2.0'
 ID: tiny-world
-description: Tiny world
+description: Tiny world project
 version: 0.0.1
+
+modules:
+ - name: tinydb
+   type: hdb
+   path: tinydb
+   requires:
+    - name: hdi-container
+
+resources:
+ - name: hdi-container
+   properties:
+      hdi-container-name: ${service-name}
+   type: com.sap.xs.hdi-container
