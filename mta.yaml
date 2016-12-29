@@ -12,6 +12,16 @@ modules:
 
  
 
+
+ - name: tinyjs
+   type: nodejs
+   path: tinyjs
+
+
+ - name: tinyui
+   type: html5
+   path: tinyui
+
 resources:
  - name: hdi-container
    properties:
